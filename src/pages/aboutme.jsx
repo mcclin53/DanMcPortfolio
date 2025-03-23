@@ -2,6 +2,7 @@ export default function AboutMe() {
     return (
         <div>
             <h1>About Me</h1>
+            <img src={'/profile.jpg'} alt="Dan's Picture" />
             <p id = 'card'>
                 My name is Dan McClintic. I am a student of the Full-Stack Coding Bootcamp.
                 I have worked in the Social Services field for over 10 years and love to 
