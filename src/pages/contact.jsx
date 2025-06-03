@@ -1,4 +1,20 @@
+import React, { useState } from 'react';
+
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        Name: '',
+        Email: '',
+        Message: ''
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value
+        }));
+    };
+
     return (
         <div>
             <h1>Contact Me</h1>
