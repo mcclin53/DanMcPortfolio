@@ -1,12 +1,31 @@
 export default function Contact() {
     return (
         <div>
-            <h1>Contact Info</h1>
-            <ul id='card'>
-                <li>Dan McClintic</li>
-                <li>989-289-5980</li>
-                <li>dan.mcclintic@gmail.com</li>
-            </ul>
+            <h1>Contact Me</h1>
+            <form>
+                <input
+                    type="text"
+                    name="Name"
+                    value={formData.Name}
+                    onChange={handleInputChange}
+                    placeholder="Name"
+                />
+                                <input
+                    type="text"
+                    name="Email"
+                    value={formData.Email}
+                    onChange={handleInputChange}
+                    placeholder="Email"
+                />
+                                <input
+                    type="text"
+                    name="Message"
+                    value={formData.Message}
+                    onChange={handleInputChange}
+                    placeholder="Message"
+                />
+                <button>Submit</button>
+            </form>
         </div>
     );
 }
